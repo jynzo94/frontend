@@ -175,6 +175,7 @@ export default function SupportForm() {
   }
 
   const handleSubmit = async (values: SupportFormData, actions: FormikHelpers<SupportFormData>) => {
+    console.log('SupportForm.handleSubmit')
     if (isLastStep(activeStep, steps)) {
       const isSubscribingToNewsletter = values.newsletter
 
